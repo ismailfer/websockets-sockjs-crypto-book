@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Spring Boot SockJS Binance</title>
+	<link rel="stylesheet" href="/css/main.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+	<script	src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+<body style="background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+<table width="650" align="center" cellpadding=2 cellspacing=2 border=0>
+
+<tr>
+	<td id="symbol" colspan="5" align="center" style="font-size: 20px; font-weight: bold;">
+		<b>BTCBUSD</b>
+	</td>
+</tr>
+
+<tr bgcolor="#dddddd">
+	<td width="150" align="right"><b>Bid Qty</b></td>
+	<td width="150" align="right"><b>Bid Price</b></td>
+	<td width="100" align="center"><i>Spread</i></td>
+	<td width="150" align="right"><b>Ask Price</b></td>
+	<td width="150" align="right"><b>Ask Qty</b></td>
+
+</tr>
+
+<tr height="30">
+	<td id="bidQty"  align="right" valign="top"></td>
+	<td id="bidPx"  align="right" valign="top"></td>
+	<td id="spread" align="center">&nbsp;</td>
+	<td id="askPx"  align="right" valign="top"></td>
+	<td id="askQty"  align="right" valign="top"></td>
+</tr>
+
+<tr>
+	<td id="utime" colspan="5"></td> 
+</tr>
+
+<tr>
+	<td id="msgStatus" colspan="5" bgcolor="#eeeeee">Connecting....</td> 
+</tr>
+
+</table>
+
+
+<script src="/js/main.js"></script>
+	
+</body>
+</html>
